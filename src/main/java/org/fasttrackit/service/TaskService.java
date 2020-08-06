@@ -27,7 +27,7 @@ public class TaskService {
         taskRepository.updateTask(id, request);
     }
 
-    private void deleteTask(long id) throws SQLException {
+    public void deleteTask(long id) throws SQLException {
         System.out.println("Deleting task " + id);
         taskRepository.deleteTask(id);
     }
